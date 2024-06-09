@@ -24,7 +24,7 @@ public class User {
     private String password;
 
     @OneToOne
-    private userRole role;
+    private UserRole role = UserRole.roleCustomer;
 
     @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "customer")

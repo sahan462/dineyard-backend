@@ -5,16 +5,18 @@ import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Component;
 
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class userRole {
+public class UserRole {
 
     @Id
     private Long roleId;
+
+    public static UserRole roleCustomer;
+
 
 
     public void setRoleId(Long roleId) {
@@ -25,3 +27,4 @@ public class userRole {
         return roleId;
     }
 }
+
